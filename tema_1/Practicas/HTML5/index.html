@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="Aqui va el archivo a donde se mandara la informacion" method="get">
+        <fieldset>
+            <legend>Esto es de la etiqueta legend, recuerda meter todo en un fieldset, aqui se habla de los inputs text, password y search</legend>
+            <label for="texto">Esto es un label para text</label>
+            <p><input type="text" name="texto" placeholder="Esto es el atributo placeholder de la etiqueta input" style="width: 20%;"></p>
+            <label for="pass">Label de Password</label>
+            <p><input type="password" name="pass" pattern=".{8,}" title="Debe contener al menos 8 caracteres" placeholder="Password con pattern">
+            <input type="submit" value="Prueba para pattern"></p>
+            <label for="se">Input tipo search</label>
+            <input type="search" name="se">
+            <input type="submit" value="Prueba para search">
+        </fieldset>
+        <fieldset>
+            <legend>Datalist</legend>
+            <input list="languagelist">
+            <datalist id="languagelist">
+                        <option value="Esto es parte de un datalist con id propio">1</option>
+                        <option value="Previamente se usara un input con el atributo list que tenga el mismo valor que el id">2</option>
+                        <option value="Los numeros que estas viendo son option dentro de datalist">3</option>
+                        <option value="Lo que aparecera al clicar los numeros sera lo que pongas en value">4</option>
+                    </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Botones</legend>
+            <input type="button" value="Input de tipo button,Boton normal con autofocus" autofocus="true">
+            <input type="submit" value="Meter lo que quieres que ponga en value, este input es de tipo submit y envia la informacion" disabled="true">
+            <input type="reset" value="Input de tipo reset, resetea todo">
+            <button disabled="true">Esto es un boton de etiqueta button desabilitado con disabled</button>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <textarea name="textarea" cols="30" rows="10">Esto es una etiqueta textarea...</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Number y tel</legend>
+            <pre>
+&lt;label for="num"&gt;Number&lt;/label&gt;
+&lt;input type="number" name="num" min="0" max="10" step="2"&gt;</pre>
+            <label for="num">Number</label>
+            <p><input type="number" name="num" min="0" max="10" step="2"></p>
+            <pre>&lt;label for="telef"&gt;Telefono&lt;/label&gt;
+&lt;input type="tel" name="telef" pattern="[0-9] {9}"&gt;</pre>
+            <label for="telef">Telefono</label>
+            <input type="tel" name="telef" pattern="[0-9] {9}">
+        </fieldset>
+        <fieldset>
+            <legend>Input tipo email, file y url</legend>
+            <pre>&lt;label for="mail"&gt;Input email&lt;/label&gt;
+&lt;input type="email" name="mail"&gt;</pre>
+            <label for="mail">Input email</label>
+            <input type="email" name="mail">
+            <pre>&lt;label for="f"&gt;File&lt;/label&gt;
+&lt;input type="file" name="f"&gt;</pre>
+            <label for="f">Input File</label>
+            <input type="file">
+            <pre>&lt;label for="url"&gt;Input URL&lt;/label&gt;
+&lt;input type="url" name="url"&gt;</pre>
+            <label for="url">Input URL</label>
+            <input type="url" name="url">
+        </fieldset>
+        <fieldset>
+            <legend>Input date, time, datetime, week y month</legend>
+            <pre>
+                &lt;label for="date"&gt;Input date&lt;/label&gt;
+                &lt;input type="date" name="date"&gt;
+            </pre>
+            <label for="date">Input date</label>
+            <input type="date" name="date">
+            <pre>
+                &lt;label for="time"&gt;Input time&lt;/label&gt;
+                &lt;input type="time" name="time"&gt;
+            </pre>
+            <label for="time">Input time</label>
+            <input type="time" name="time">
+            <pre>
+                &lt;label for="datetime"&gt;Input datetime&lt;/label&gt;
+                &lt;input type="datetime" placeholder="AAAA-MM-DDThh:mm" name="datetime"&gt;
+            </pre>
+            <label for="date">Input datetime</label>
+            <input type="datetime" placeholder="AAAA-MM-DDThh:mm" name="datetime">
+            <pre>
+                &lt;label for="week"&gt;Input week&lt;/label&gt;
+                &lt;input type="week" placeholder="AAAA-WSS" name="week"&gt;
+            </pre>
+            <label for="week">Input week</label>
+            <input type="week" placeholder="AAAA-WSS" name="week">
+            <pre>
+                &lt;label for="month"&gt;Input month&lt;/label&gt;
+                &lt;input type="month" placeholder="AAAA-MM" name="month"&gt;
+            </pre>
+                <label for="month">Input month</label>
+                <input type="month" placeholder="AAAA-MM" name="month">
+        </fieldset>
+    </form>
+</body>
+</html>
